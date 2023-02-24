@@ -10,9 +10,19 @@ function App() {
     setGreased((greased) => !greased);
   };
 
+  const [sort, setSort] = useState("");
+
+  const toggleSort = (someString) => {
+    setSort(someString);
+  };
+
   return (
     <div className="App">
-      <Nav greased={greased} filterGrease={filterGrease} />
+      <Nav
+        greased={greased}
+        filterGrease={filterGrease}
+        toggleSort={toggleSort}
+      />
       <HogContainer greased={greased} />
     </div>
   );

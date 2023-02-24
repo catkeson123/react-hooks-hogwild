@@ -27,7 +27,7 @@ function HogItem({ name, image, specialty, weight, greased, medalAchieved }) {
     );
   }
 
-  return <div>{hog}</div>;
+  return <div className="ui four wide column image pigTile">{hog}</div>;
 }
 
 export default HogItem;
